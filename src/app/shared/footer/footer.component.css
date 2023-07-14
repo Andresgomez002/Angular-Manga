@@ -1,0 +1,35 @@
+.footer {
+  background-color: black;
+}
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  text-align: center;
+  gap: 20px;
+}
+.t {
+  list-style-type: none;
+}
+.a {
+  text-decoration: none;
+  color: white;
+}
+.hr {
+  color: white;
+}
+ul {
+  list-style: none;
+}
+h5 {
+  color: white;
+}
+a {
+  color: gray;
+}
+.copyright {
+  color: white;
+  padding-left: 20px;
+}

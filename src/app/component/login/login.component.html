@@ -1,24 +1,43 @@
-<div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6 p-5">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-center">Iniciar sesión</h5>
-            <form>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-              </div>
-            </form>
+<main class="main">
+  <div class="img-fondo">
+    <img
+      src="../../../assets/images/rem-PhotoRoom.png-PhotoRoom.png"
+      alt="rem"
+      class="rem"
+    />
+    <div class="wrapper">
+      <div class="form-box login">
+        <h2>Acceder</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><i class="bi bi-envelope-fill"></i></span>
+            <input type="email" required />
+            <label>Email</label>
           </div>
-        </div>
+          <div class="input-box">
+            <span class="icon"
+              ><i class="bi bi-lock-fill"></i></span>
+            <input type="password" required />
+            <label>Contraseña</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Recordar</label>
+            <a href="#" class="forget">olvidaste tu contraseña?</a>
+          </div>
+          <button type="submit" class="btn">Acceder</button>
+          <div class="login-register">
+            <p>
+              ¿No tienes una cuenta?<a
+                routerLink="register"
+                class="register-link forget"
+                >registro</a
+              >
+            </p>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</main>
+
+<hr class="hr" />
