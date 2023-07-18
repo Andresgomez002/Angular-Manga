@@ -8,23 +8,27 @@
     <div class="wrapper">
       <div class="form-box login">
         <h2>Acceder</h2>
-        <form action="#">
+        <form  class="form-auth form-login"
+      [formGroup]="loginForm"
+      (ngSubmit)="login()"
+      autocomplete="off"
+      >
           <div class="input-box">
             <span class="icon"><i class="bi bi-envelope-fill"></i></span>
-            <input type="email" required />
+            <input type="email" required formControlName="email" id="email" />
             <label>Email</label>
           </div>
           <div class="input-box">
             <span class="icon"
               ><i class="bi bi-lock-fill"></i></span>
-            <input type="password" required />
+            <input type="password" required formControlName="password" id="password"/>
             <label>Contraseña</label>
           </div>
           <div class="remember-forgot">
             <label><input type="checkbox" />Recordar</label>
             <a href="#" class="forget">olvidaste tu contraseña?</a>
           </div>
-          <button type="submit" class="btn">Acceder</button>
+          <button type="submit" class="btn" [disabled]="this.loginForm.invalid">Acceder</button>
           <div class="login-register">
             <p>
               ¿No tienes una cuenta?<a
